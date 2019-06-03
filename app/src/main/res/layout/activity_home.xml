@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/myOverview"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/myOverview"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+        android:id="@+id/frameLay"
+        android:layout_width="398dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/my_overview_border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOverview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_background_style"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/Divider"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/home_background_style"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/acc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:text="@string/acc1"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:text="@string/acc2"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:text="@string/acc3"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:text="@string/acc4"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc5"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:text="@string/acc5"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/home_background_style"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/acc1amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="@string/acc1amount"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc2amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="@string/acc2amount"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc3amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="@string/acc3amount"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc4amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="@string/acc4amount"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/acc5amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/btn_selected"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="@string/acc5amount"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
