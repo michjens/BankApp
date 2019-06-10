@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/ic_transfer"
+        android:icon="@drawable/ic_transfer"
+        android:title="Transfer"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/ic_bills"
+        android:icon="@drawable/ic_bills"
+        app:showAsAction="ifRoom"
+        android:title="Bills" />
+    <item
+        android:id="@+id/ic_mail"
+        android:icon="@drawable/ic_mail"
+        android:title="Mail"
+        app:showAsAction="ifRoom"/>
+    </group>
+</menu>
