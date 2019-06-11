@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -173,4 +173,58 @@
         </LinearLayout>
     </FrameLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/include3"
+        layout="@layout/activity_bottom_nav_helper_home" />
+
+    <FrameLayout
+        android:layout_width="265dp"
+        android:layout_height="184dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/bankOdense"
+            android:layout_width="140dp"
+            android:layout_height="115dp"
+            android:layout_gravity="bottom|center"
+            app:srcCompat="@drawable/odense" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="My Bank" />
+
+            <TextView
+                android:id="@+id/myBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bankCph"
+            android:layout_width="137dp"
+            android:layout_height="116dp"
+            android:layout_gravity="bottom|center"
+            app:srcCompat="@drawable/copenhagen" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
